@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/todos")
+@CrossOrigin(origins = "*")  // ✅ 모든 프론트엔드 요청 허용 (React와 통신 가능)
 
 public class TodoController {
     private final TodoService todoService;
